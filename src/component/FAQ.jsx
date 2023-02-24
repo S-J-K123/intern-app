@@ -1,6 +1,9 @@
 import React from "react";
+import Translation from "../Translation";
+
 
 const FAQ = ({ faq, index, toggleFAQ }) => {
+  
   return <div 
   className={"faq " + (faq.open ? "open" : '')}
   key={index}
@@ -13,7 +16,9 @@ const FAQ = ({ faq, index, toggleFAQ }) => {
 <div className="faq-answer">
     {faq.answer}
 </div>
+<Translation/>
   </div>;
+ 
 };
 
 export default FAQ;

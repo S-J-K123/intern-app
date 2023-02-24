@@ -1,16 +1,23 @@
 import { useState } from "react";
 import FAQ from "./component/FAQ";
 import Header from "./component/Header";
+import Translation from "./Translation";
+
+
+
 
 
 
 
 function App() {
+
+
+  
 const[faqs, setFaqs] = useState([
   {
     question: "How to make the payment",
     answer: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed nobis at adipisci obcaecat",
-    open: true
+    open: false
   },
   {
     question: "How to contact",
@@ -34,6 +41,7 @@ const toggleFAQ = index => {
     }
 
     return faq
+   
   }))
 }
 
